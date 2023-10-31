@@ -1,0 +1,119 @@
+.forms {
+    margin-top: 12rem;
+
+    @media (max-width: $wrapper-mobile) {
+        margin-top: 4.8rem;
+    }
+}
+
+.forms__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $wrapper-mobile) {
+        flex-direction: column;
+    }
+}
+
+.forms__photo {
+    background-image: url("../../assets/forms/forms-photo.jpg");
+    background-size: cover;
+    width: 56.2rem;
+    height: 56.6rem;
+
+    @media (max-width: $wrapper-mobile) {
+        display: none;
+    }
+}
+
+.forms__block {
+    width: 67.2rem;
+
+    @media (max-width: $wrapper-mobile) {
+        width: 100%;
+    }
+}
+
+.forms__block .content-text {
+    margin-top: 3.2rem;
+    padding-bottom: 0;
+
+    @media (max-width: $wrapper-mobile) {
+        margin-top: 2rem;
+    }
+}
+
+.form {
+    margin-top: 7.2rem;
+
+    @media (max-width: $wrapper-mobile) {
+        margin-top: 3.2rem;
+    }
+}
+
+.form__input {
+    display: flex;
+}
+
+.form__input .content-text {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input {
+    margin-left: .1rem;
+    background: transparent;
+    border: none;
+}
+
+.form__line {
+    margin: 1.2rem 0 1.5rem;
+    width: 56.2rem;
+    height: .1rem;
+    background-color: $color-text;
+
+    @media (max-width: $wrapper-mobile) {
+        width: 100%;
+    }
+}
+
+.form-button {
+    margin-top: 1.2rem;
+    padding: 1.2rem 2rem;
+    background: $color-text;
+    color: $color-bg;
+    text-align: center;
+    @include font(1.6rem, 140%);
+    border: none;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background: $color-accent;
+    color: $color-text;
+    @extend %transition;
+}
+
+.forms__buttons-label {
+    margin-top: 4rem;
+    display: flex;
+    column-gap: .8rem;
+
+    @media (max-width: $wrapper-mobile) {
+        margin-top: 2.8rem;
+    }
+}
+
+.button_app-store {
+    display: inline-block;
+    width: 12.1rem;
+    height: 3.6rem;
+    background-image: url("../../assets/forms/App-Store.svg")
+}
+
+.button_google {
+    display: inline-block;
+    width: 12.1rem;
+    height: 3.6rem;
+    background-image: url("../../assets/forms/Google-Play.svg")
+}

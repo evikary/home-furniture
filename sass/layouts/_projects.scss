@@ -1,0 +1,20 @@
+.grid-layout-3-column {
+    margin-top: 3.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 44.5rem);
+    grid-template-rows: 58rem;
+    gap: 2rem;
+
+    @media (max-width: $wrapper-mobile) {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.project__photo {
+    @media (max-width: $wrapper-mobile) {
+        width: 252px;
+        height: 328px;
+    }
+}

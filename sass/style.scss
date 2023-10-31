@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2'), url('../fonts/Roboto-Regular.woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.woff2'), url('../fonts/Helvetica.woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+//abstracts
+@import "abstracts/constants";
+@import "abstracts/placeholders";
+@import "abstracts/mixins";
+
+//base
+@import "base/base";
+
+//layouts
+@import "layouts/wrapper";
+@import "layouts/projects";
+@import "layouts/feedback";
+
+//components
+@import "components/header";
+@import "components/title";
+@import "components/promo";
+@import "components/about-us";
+@import "components/work-algorithm";
+@import "components/projects";
+@import "components/feedback";
+@import "components/forms";
+@import "components/footer";

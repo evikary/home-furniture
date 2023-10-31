@@ -1,0 +1,9 @@
+.wrapper {
+    width: $content-width;
+    margin: auto;
+
+    @media (max-width: $wrapper-mobile) {
+        width: $mobile-content-width;
+        margin: auto;
+    }
+}

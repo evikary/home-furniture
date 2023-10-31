@@ -1,0 +1,11 @@
+.layout-3-column {
+    margin-top: 3.2rem;
+    display: flex;
+    column-gap: 2rem;
+
+    @media (max-width: $wrapper-mobile) {
+        margin-top: 2rem;
+        flex-direction: column;
+        row-gap: 1.6rem;
+    }
+}

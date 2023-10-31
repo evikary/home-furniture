@@ -1,0 +1,127 @@
+.header {
+    padding-top: 1.2rem;
+    background-color: $color-bg;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    flex-grow: 3;
+    background-image: url(../../assets/header/header-icon.svg);
+    background-repeat: no-repeat;
+    width: 7rem;
+    height: 7.4rem;
+    display: inline-block;
+
+    @media (max-width: $wrapper-mobile) {
+        flex-grow: 1;
+        width: 3.9rem;
+        height: 4.1rem;
+        background-image: url(../../assets/header/header-icon-mobile.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+.header__navigation {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+
+    @media (max-width: $wrapper-mobile) {
+        display: none;
+    }
+}
+
+.navigation {
+    list-style-type: none;
+}
+
+.item {
+    margin-bottom: .8rem;
+    cursor: pointer;
+}
+
+.navigation-links:hover {
+    color: $color-success;
+    @extend %transition;
+}
+
+.navigation-links {
+    color: $color-text;
+    @include font(1.8rem, normal);
+    @extend %text-decoration;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+.phone {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    @media (max-width: $wrapper-mobile) {
+        display: none;
+    }
+}
+
+.header__phone {
+    position: relative;
+    color: $color-text;
+    @include font(1.8rem, normal);
+    @extend %text-decoration;
+    text-align: end;
+    @extend %transition;
+}
+
+.header__phone:hover {
+    color: $color-success;
+}
+
+.header__phone:hover::before {
+    transition: all .3s;
+    content: "";
+    position: absolute;
+    bottom: 7.5rem;
+    left: 50%;
+    border: 1.4rem solid transparent;
+    border-bottom: 1rem solid $color-accent;
+    transform: translateX(-50%);
+}
+
+.header__phone:hover::after {
+    color: $color-success;
+    transition: all .3s;
+    content: "Позвонить";
+    width: 80%;
+    height: 2rem;
+    position: absolute;
+    left: 10%;
+    top: 3rem;
+    padding: .5rem 0;
+    background: $color-accent;
+    color: $color-text;
+    font-family: 'Helvetica';
+    text-align: center;
+    @include font(1.4rem, normal);
+    border-radius: 4rem;
+}
+
+.bugger-menu {
+    background-image: url("../../assets/header/burger.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2.4rem;
+    height: 1.4rem;
+    display: none;
+
+    @media (max-width: $wrapper-mobile) {
+        display: inline-block;
+        margin-top: 14px;
+    }
+}
