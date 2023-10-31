@@ -18,9 +18,11 @@
 @import "abstracts/constants";
 @import "abstracts/placeholders";
 @import "abstracts/mixins";
+@import "abstracts/responsive";
 
 //base
 @import "base/base";
+@import "base/slider";
 
 //layouts
 @import "layouts/wrapper";

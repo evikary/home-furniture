@@ -1,0 +1,25 @@
+.slider-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-button {
+    margin-top: 24px;
+    display: flex;
+    column-gap: 24px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    font-family: 'Helvetica';
+    color: $color-text;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: $color-success;
+}

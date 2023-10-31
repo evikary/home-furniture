@@ -21,7 +21,7 @@
                     <li class="item"><a class="navigation-links" href="#section-feedback">Отзывы</a></li>
                 </ul>
             </nav>
-            <span class="bugger-menu"></span>
+            <span class="burger-menu"></span>
             <div class="phone">
                 <a class="header__phone" href="tel:+79999999999">+7 999 999 99 99</a>
             </div>
@@ -127,7 +127,7 @@
         <section id="section-projects" class="projects">
             <div class="wrapper">
                 <h2>Проекты</h2>
-                <div class="grid-layout-3-column">
+                <div class="grid-layout-3-column only-desk">
                     <div class="project first-photo">
                         <img class="project__photo" src="./assets/projects/project-photo1.jpg" alt="">
                         <div class="bg-photo">Тумба под телевизор
@@ -148,6 +148,35 @@
                     </div>
                     <div class="project">
                         <img class="project__photo" src="./assets/projects/project-photo6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider-wrapper non-desk">
+                    <div class="slider-track">
+                        <div class="project first-photo slider-image">
+                            <img class="project__photo" src="./assets/projects/project-photo1.jpg" alt="">
+                            <div class="bg-photo">Тумба под телевизор
+                                <span class="project-icon"></span>
+                            </div>
+                        </div>
+                        <div class="project slider-image">
+                            <img class="project__photo" src="./assets/projects/project-photo2.jpg" alt="">
+                        </div>
+                        <div class="project slider-image">
+                            <img class="project__photo" src="./assets/projects/project-photo3.jpg" alt="">
+                        </div>
+                        <div class="project slider-image">
+                            <img class="project__photo" src="./assets/projects/project-photo4.jpg" alt="">
+                        </div>
+                        <div class="project slider-image">
+                            <img class="project__photo" src="./assets/projects/project-photo5.jpg" alt="">
+                        </div>
+                        <div class="project slider-image">
+                            <img class="project__photo" src="./assets/projects/project-photo6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-button non-desk">
+                        <button type="button" class="arrow prev">&larr;</button>
+                        <button type="button" class="arrow next">&rarr;</button>
                     </div>
                 </div>
             </div>
@@ -228,6 +257,7 @@
             </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
